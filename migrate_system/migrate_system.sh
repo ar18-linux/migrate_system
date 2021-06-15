@@ -25,4 +25,3 @@ mount "/dev/mapper/old_system" "/mnt/old_system"
 chroot "/mnt/new_system" usermod -u "${user_id}" "${user_name}"
 chroot "/mnt/new_system" groupmod -g "${group_id}" "${user_name}"
 
-rsync -aAXv --delete "/mnt/old_system/home/${user_name}/" "/mnt/new_system/home/${user_name}"

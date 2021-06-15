@@ -1,0 +1,5 @@
+module_name="migrate_system"
+
+if [ ! -v ar18_install_dir ]; then
+  install_dir="/opt/ar18"
+fi
